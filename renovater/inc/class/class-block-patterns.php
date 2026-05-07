@@ -4,7 +4,6 @@
  *
  * @author Jegstudio
  * @package renovater
- * @since 1.0.0
  */
 
 namespace Renovater;
@@ -16,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 use WP_Block_Pattern_Categories_Registry;
 
 /**
- * Block Pattern Class
+ * Init Class
  *
  * @package renovater
  */
@@ -47,6 +46,7 @@ class Block_Patterns {
 	 */
 	public function __construct() {
 		$this->register_block_patterns();
+		$this->register_synced_patterns();
 	}
 
 	/**
@@ -54,11 +54,12 @@ class Block_Patterns {
 	 */
 	private function register_block_patterns() {
 		$block_pattern_categories = array(
-			'renovater-basic' => array( 'label' => __( 'Renovater Basic Patterns', 'renovater' ) ),
+			'renovater-core' => array( 'label' => esc_html__( 'Renovater Core Patterns', 'renovater' ) ),
 		);
 
 		if ( defined( 'GUTENVERSE' ) ) {
-			$block_pattern_categories['renovater-gutenverse'] = array( 'label' => __( 'Renovater Gutenverse Patterns', 'renovater' ) );
+			$block_pattern_categories['renovater-gutenverse'] = array( 'label' => esc_html__( 'Renovater Gutenverse Patterns', 'renovater' ) );
+			$block_pattern_categories['renovater-pro'] = array( 'label' => esc_html__( 'Renovater Gutenverse PRO Patterns', 'renovater' ) );
 		}
 
 		$block_pattern_categories = apply_filters( 'renovater_block_pattern_categories', $block_pattern_categories );
@@ -70,82 +71,224 @@ class Block_Patterns {
 		}
 
 		$block_patterns = array(
-			'core-404',
-			'core-footer',
-			'core-header',
-			'core-index-about',
-			'core-index-call-to-action',
-			'core-index-client-logo',
-			'core-index-fun-fact',
-			'core-index-hero',
-			'core-index-services',
-			'core-index-testimonials',
-			'core-index-works',
-			'core-page-title',
-			'core-single-post-title',
-			'core-archive-title',
-			'core-search-title',
-			'core-index-title',
+			'renovater-core-footer',
+			'renovater-core-header',
+			'renovater-core-404',
+			'renovater-core-archive-title',
+			'renovater-core-index-title',
+			'renovater-core-page-title',
+			'renovater-core-search-title',
+			'renovater-core-single-post-title',
+			'renovater-core-index-hero',
+			'renovater-core-index-about',
+			'renovater-core-index-fun-fact',
+			'renovater-core-index-services',
+			'renovater-core-index-call-to-action',
+			'renovater-core-index-works',
+			'renovater-core-index-testimonials',
+			'renovater-core-index-client-logo',
 		);
 
 		if ( defined( 'GUTENVERSE' ) ) {
-			$block_patterns[] = 'gutenverse-header';
-			$block_patterns[] = 'gutenverse-footer';
-			$block_patterns[] = 'gutenverse-about-us-about';
-			$block_patterns[] = 'gutenverse-about-us-call-to-action';
-			$block_patterns[] = 'gutenverse-about-us-fun-fact';
-			$block_patterns[] = 'gutenverse-about-us-team';
-			$block_patterns[] = 'gutenverse-about-us-title';
-			$block_patterns[] = 'gutenverse-about-us-why-choose-us';
-			$block_patterns[] = 'gutenverse-contact-us-hero-title';
-			$block_patterns[] = 'gutenverse-contact-us-contact';
-			$block_patterns[] = 'gutenverse-faq-call-to-action';
-			$block_patterns[] = 'gutenverse-faq-questions';
-			$block_patterns[] = 'gutenverse-faq-hero-title';
-			$block_patterns[] = 'gutenverse-faq-pricing-plans';
-			$block_patterns[] = 'gutenverse-home-about';
-			$block_patterns[] = 'gutenverse-home-call-to-action';
-			$block_patterns[] = 'gutenverse-home-client-logo';
-			$block_patterns[] = 'gutenverse-home-faq';
-			$block_patterns[] = 'gutenverse-home-services';
-			$block_patterns[] = 'gutenverse-home-fun-fact';
-			$block_patterns[] = 'gutenverse-home-hero';
-			$block_patterns[] = 'gutenverse-home-testimonials';
-			$block_patterns[] = 'gutenverse-home-work';
-			$block_patterns[] = 'gutenverse-pricing-fun-fact';
-			$block_patterns[] = 'gutenverse-pricing-hero-title';
-			$block_patterns[] = 'gutenverse-pricing-pricing-plans';
-			$block_patterns[] = 'gutenverse-pricing-testimonials';
-			$block_patterns[] = 'gutenverse-services-client-logo';
-			$block_patterns[] = 'gutenverse-services-fun-fact';
-			$block_patterns[] = 'gutenverse-services-hero-title';
-			$block_patterns[] = 'gutenverse-services-work-process';
-			$block_patterns[] = 'gutenverse-404-section';
-			$block_patterns[] = 'gutenverse-archive-posts';
-			$block_patterns[] = 'gutenverse-archive-title';
-			$block_patterns[] = 'gutenverse-index-posts-2';
-			$block_patterns[] = 'gutenverse-index-posts';
-			$block_patterns[] = 'gutenverse-index-title';
-			$block_patterns[] = 'gutenverse-page-posts';
-			$block_patterns[] = 'gutenverse-page-title';
-			$block_patterns[] = 'gutenverse-search-content';
-			$block_patterns[] = 'gutenverse-search-posts';
-			$block_patterns[] = 'gutenverse-search-title';
-			$block_patterns[] = 'gutenverse-single-post-posts';
-			$block_patterns[] = 'gutenverse-single-post-title';
+			$block_patterns[] = 'renovater-gutenverse-footer';
+			$block_patterns[] = 'renovater-gutenverse-header';
+			$block_patterns[] = 'renovater-gutenverse-404-section';
+			$block_patterns[] = 'renovater-gutenverse-archive-title';
+			$block_patterns[] = 'renovater-gutenverse-archive-posts';
+			$block_patterns[] = 'renovater-gutenverse-index-title';
+			$block_patterns[] = 'renovater-gutenverse-index-posts';
+			$block_patterns[] = 'renovater-gutenverse-page-title';
+			$block_patterns[] = 'renovater-gutenverse-page-posts';
+			$block_patterns[] = 'renovater-gutenverse-search-title';
+			$block_patterns[] = 'renovater-gutenverse-search-posts';
+			$block_patterns[] = 'renovater-gutenverse-single-post-title';
+			$block_patterns[] = 'renovater-gutenverse-single-post-posts';
+			$block_patterns[] = 'renovater-gutenverse-home-hero';
+			$block_patterns[] = 'renovater-gutenverse-home-about';
+			$block_patterns[] = 'renovater-gutenverse-home-fun-fact';
+			$block_patterns[] = 'renovater-gutenverse-home-services';
+			$block_patterns[] = 'renovater-gutenverse-home-call-to-action';
+			$block_patterns[] = 'renovater-gutenverse-home-work';
+			$block_patterns[] = 'renovater-gutenverse-home-testimonials';
+			$block_patterns[] = 'renovater-gutenverse-home-faq';
+			$block_patterns[] = 'renovater-gutenverse-home-client-logo';
+			
 		}
 
 		$block_patterns = apply_filters( 'renovater_block_patterns', $block_patterns );
+		$pattern_list   = get_option( 'renovater_synced_pattern_imported', false );
+		if ( ! $pattern_list ) {
+			$pattern_list = array();
+		}
+
+		$active_slug = get_stylesheet();
+		$inserted_content = get_option(
+			"gutenverse_{$active_slug}_content_inserted",
+			array(
+				'pages'    => array(),
+				'patterns' => array(),
+				'menus'    => array(),
+				'content_has_menus' => array(),
+			)
+		);
 
 		if ( function_exists( 'register_block_pattern' ) ) {
 			foreach ( $block_patterns as $block_pattern ) {
 				$pattern_file = get_theme_file_path( '/inc/patterns/' . $block_pattern . '.php' );
+				$pattern_data = require $pattern_file;
 
-				register_block_pattern(
-					'renovater/' . $block_pattern,
-					require $pattern_file
-				);
+				if ( (bool) $pattern_data['is_sync'] ) {
+					$post = get_page_by_path( $block_pattern . '-synced', OBJECT, 'wp_block' );
+					$post_id = $post ? $post->ID : null;
+					if ( empty( $post ) ) {
+						/**Download Image */
+						$content = wp_slash( $pattern_data['content'] );
+						$image_importer_ver = $pattern_data['image_importer_ver'] ?? null;
+						if ( isset( $pattern_data['images'] ) && ! empty( $pattern_data['images'] ) ) {
+							$images = json_decode( $pattern_data['images'] );
+							if ( ! $image_importer_ver ) {
+								foreach ( $images as $key => $image ) {
+									$url  = $image->image_url;
+									$data = Helper::check_image_exist( $url );
+									if ( ! $data ) {
+										$data = Helper::handle_file( $url );
+									}
+									$content  = str_replace( $url, $data['url'], $content );
+									$image_id = $image->image_id;
+									if ( $image_id && 'null' !== $image_id ) {
+										$content = str_replace( '"imageId\":' . $image_id, '"imageId\":' . $data['id'], $content );
+									}
+								}
+							} else {
+								foreach ( $images as $key => $image ) {
+									$url     = $key;
+									$pattern = $image->pattern;
+									$data    = Helper::check_image_exist( $url );
+									if ( ! $data ) {
+										$data = Helper::handle_file( $url );
+									}
+									foreach ( $pattern as $p ) {
+										$placeholder_arr        = explode( '|', trim( $p, '{}' ) );
+										$placeholder_value_type = end( $placeholder_arr );
+										switch ( $placeholder_value_type ) {
+											case 'url':
+												$placeholder_data_type = $placeholder_arr[1];
+												if ( 'case2' === $placeholder_data_type ) {
+													$placeholder_data_size = $placeholder_arr[3];
+													$target                = wp_get_attachment_image_url( $data['id'], $placeholder_data_size );
+												} else {
+													$target = wp_get_attachment_url( $data['id'] );
+												}
+												break;
+											case 'id':
+											default:
+												$target = $data['id'];
+												break;
+										}
+										$content = str_replace( $p, $target, $content );
+									}
+								}
+							}
+						}
+						$content = $this->decode_unicode_sequences($content);
+						$post_id = wp_insert_post(
+							array(
+								'post_name'    => $block_pattern . '-synced',
+								'post_title'   => $pattern_data['title'],
+								'post_content' => $content,
+								'post_status'  => 'publish',
+								'post_author'  => 1,
+								'post_type'    => 'wp_block',
+							)
+						);
+						if ( isset( $pattern_data['placeholder'] ) ) {
+							$inserted_content['patterns'][] = array(
+								'id' => $post_id,
+								'is_remapped' => false,
+								'placeholder' => ! empty( $pattern_data['placeholder'] ) ? $pattern_data['placeholder'] : '',
+							);
+						}
+						if ( ! is_wp_error( $post_id ) ) {
+							$pattern_category = $pattern_data['categories'];
+							foreach ( $pattern_category as $category ) {
+								wp_set_object_terms( $post_id, $category, 'wp_pattern_category' );
+							}
+						}
+						$pattern_data['content']  = '<!-- wp:block {"ref":' . $post_id . '} /-->';
+						$pattern_data['inserter'] = false;
+						$pattern_data['slug']     = $block_pattern;
+
+						$pattern_list[] = $pattern_data;
+						/**Check if content has menu */
+						$normalized_content = wp_unslash( $content );
+						preg_match_all(
+							'/"menuId"\s*:\s*(?:"(\d+)"|(\d+))/',
+							$normalized_content,
+							$matches
+						);
+
+						if ( ! empty( array_filter( array_merge( $matches[1], $matches[2] ) ) ) ) {
+							$inserted_content['content_has_menus'][] = $post_id;
+						}
+					}
+					
+				} else {
+					register_block_pattern(
+						'renovater/' . $block_pattern,
+						require $pattern_file
+					);
+				}
 			}
+			
+			update_option( 'renovater_synced_pattern_imported', $pattern_list );
+			update_option(
+				"gutenverse_{$active_slug}_content_inserted",
+				$inserted_content
+			);
 		}
 	}
+
+	/**
+	 * Decode unicode sequences
+	 *
+	 * @param string $content .
+	 * @return string
+	 */
+	private function decode_unicode_sequences( $content ) {
+		return preg_replace_callback(
+			'/\\\\u([0-9a-fA-F]{4})/',
+			function ( $matches ) {
+
+				$hex = strtolower( $matches[1] );
+
+				// Always keep quotes escaped.
+				if ( '0022' === $hex ) {
+					return '\"';
+				}
+
+				$codepoint = hexdec( $hex );
+
+				return mb_convert_encoding(
+					pack( 'n', $codepoint ),
+					'UTF-8',
+					'UTF-16BE'
+				);
+			},
+			$content
+		);
+	}
+
+	/**
+	 * Register Synced Patterns
+	 */
+	 private function register_synced_patterns() {
+		$patterns = get_option( 'renovater_synced_pattern_imported' );
+
+		 foreach ( $patterns as $block_pattern ) {
+			 register_block_pattern(
+				'renovater/' . $block_pattern['slug'],
+				$block_pattern
+			);
+		 }
+	 }
 }

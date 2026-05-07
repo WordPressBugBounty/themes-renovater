@@ -1,195 +1,563 @@
 {
-	"version": 2,
-	"settings": {
-		"appearanceTools": true,
-		"color": {
-			"link": true,
-			"palette": [
-				{
-					"slug": "renovater-primary",
-					"color": "#333333",
-					"name": "Primary"
-				},
-				{
-					"slug": "renovater-accent",
-					"color": "#fcc236",
-					"name": "Accent"
-				},
-				{
-					"slug": "renovater-background",
-					"color": "#ffffff",
-					"name": "Background"
-				},
-				{
-					"slug": "renovater-background-2",
-					"color": "#efefef",
-					"name": "Background 2"
-				},
-				{
-					"slug": "renovater-body-text",
-					"color": "#444444",
-					"name": "Body/Text"
-				},
-				{
-					"slug": "renovater-border",
-					"color": "#2b2b2b",
-					"name": "Border"
-				}
-			],
-			"gradients": [
-				{
-					"slug": "quinary-to-septenary",
-					"gradient": "linear-gradient(160deg, var(--wp--preset--color--quinary), var(--wp--preset--color--septenary))",
-					"name": "Pink to Yellow"
-				}
-			]
-		},
-		"typography": {
-			"customLineHeight": true,
-			"customFontSize": true,
-			"fontFamilies": [
-				{
-					"fontFamily": "'Roboto'",
-					"name": "Roboto",
-					"slug": "primary"
-				},
-				{
-					"fontFamily": "'IBM Plex Sans'",
-					"name": "IBM Plex Sans",
-					"slug": "secondary"
-				}
-			],
-			"fontSizes": [
-				{
-					"slug": "tiny",
-					"size": "16px",
-					"name": "Tiny"
-				},
-				{
-					"slug": "small",
-					"size": "18px",
-					"name": "Small"
-				},
-				{
-					"slug": "normal",
-					"size": "20px",
-					"name": "Normal"
-				},
-				{
-					"slug": "large",
-					"size": "24px",
-					"name": "Large"
-				},
-				{
-					"slug": "extra-large",
-					"size": "40px",
-					"name": "Extra large"
-				},
-				{
-					"slug": "huge",
-					"size": "96px",
-					"name": "Huge"
-				},
-				{
-					"slug": "gigantic",
-					"size": "144px",
-					"name": "Gigantic"
-				}
-			]
-		},
-		"spacing": {
-			"padding": true,
-			"margin": true,
-			"blockGap": true,
-			"units": [
-				"px",
-				"em",
-				"rem",
-				"vh",
-				"vw"
-			]
-		},
-		"layout": {
-			"contentSize": "1170px",
-			"wideSize": "1200px"
-		},
-		"border": {
-			"customColor": true,
-			"customRadius": true,
-			"customStyle": true,
-			"customWidth": true
-		},
-		"custom": {
-			"headings": {
-				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--primary)"
-				}
-			}
-		}
-	},
-	"styles": {
-		"color": {
-			"background": "#ffffff",
-			"text": "#444444"
-		},
-		"typography": {},
-		"elements": {
-			"link": {
-				"color": {
-					"text": "#fcc236"
-				}
-			},
-			"h1": {
-				"typography": {
-					"fontFamily": "var(--wp--custom--headings--typography--font-family)"
-				}
-			},
-			"h2": {
-				"typography": {
-					"fontFamily": "var(--wp--custom--headings--typography--font-family)"
-				}
-			},
-			"h3": {
-				"typography": {
-					"fontFamily": "var(--wp--custom--headings--typography--font-family)"
-				}
-			},
-			"h4": {
-				"typography": {
-					"fontFamily": "var(--wp--custom--headings--typography--font-family)"
-				}
-			},
-			"h5": {
-				"typography": {
-					"fontFamily": "var(--wp--custom--headings--typography--font-family)"
-				}
-			},
-			"h6": {
-				"typography": {
-					"fontFamily": "var(--wp--custom--headings--typography--font-family)"
-				}
-			}
-		},
-		"blocks": {}
-	},
-	"templateParts": [
-		{
-			"name": "header",
-			"area": "header"
-		},
-		{
-			"name": "footer",
-			"area": "footer"
-		}
-	],
-	"customTemplates": [
-		{
-			"name": "blank-canvas",
-			"title": "Blank Canvas"
-		},
-		{
-			"name": "template-basic",
-			"title": "Basic Template"
-		}
-    ]
+    "$schema": "https://schemas.wp.org/wp/6.2/theme.json",
+    "customTemplates": [
+        {
+            "name": "blank-canvas",
+            "title": "Blank canvas",
+            "postTypes": [
+                "post",
+                "page"
+            ]
+        },
+        {
+            "name": "full-width",
+            "title": "Full Width",
+            "postTypes": [
+                "post",
+                "page"
+            ]
+        }
+    ],
+    "settings": {
+        "appearanceTools": true,
+        "color": {
+            "gradients": [],
+            "palette": [
+                {
+                    "slug": "renovater-primary",
+                    "name": "Primary (Legacy)",
+                    "color": "#333333"
+                },
+                {
+                    "slug": "renovater-accent",
+                    "name": "Accent (Legacy)",
+                    "color": "#fcc236"
+                },
+                {
+                    "slug": "renovater-background-2",
+                    "name": "Background (Legacy)",
+                    "color": "#efefef"
+                },
+                {
+                    "slug": "renovater-body-text",
+                    "name": "Body Text (Legacy)",
+                    "color": "#444444"
+                },
+                {
+                    "slug": "renovater-border",
+                    "name": "Border (Legacy)",
+                    "color": "#2b2b2b"
+                },
+                {
+                    "slug": "gv-color-primary",
+                    "name": "Primary",
+                    "color": "#fcc236"
+                },
+                {
+                    "slug": "gv-color-text-primary",
+                    "name": "Text Primary",
+                    "color": "#333333"
+                },
+                {
+                    "slug": "gv-color-text-secondary",
+                    "name": "Text Secondary",
+                    "color": "#444444"
+                },
+                {
+                    "slug": "gv-color-text-placeholder",
+                    "name": "Text Placeholder",
+                    "color": "#a0a0a0"
+                },
+                {
+                    "slug": "gv-color-accent",
+                    "name": "Accent",
+                    "color": "#fcc236"
+                },
+                {
+                    "slug": "gv-color-accent-secondary",
+                    "name": "Accent Secondary",
+                    "color": "#333333"
+                },
+                {
+                    "slug": "gv-color-accent-hover",
+                    "name": "Accent Hover",
+                    "color": "#daa82e"
+                },
+                {
+                    "slug": "gv-color-background-primary",
+                    "name": "Background Primary",
+                    "color": "#030301"
+                },
+                {
+                    "slug": "gv-color-background-secondary",
+                    "name": "Background Secondary",
+                    "color": "#f8f8f8"
+                },
+                {
+                    "slug": "gv-color-background-tertiary",
+                    "name": "Background Tertiary",
+                    "color": "#000000"
+                },
+                {
+                    "slug": "gv-color-border",
+                    "name": "Border",
+                    "color": "#ededed"
+                },
+                {
+                    "slug": "gv-color-border-secondary",
+                    "name": "Border Secondary",
+                    "color": "#eaeaea1c"
+                },
+                {
+                    "slug": "gv-color-border-input",
+                    "name": "Border Input",
+                    "color": "#b7b7b7"
+                },
+                {
+                    "slug": "gv-color-secondary",
+                    "name": "Secondary",
+                    "color": "#efefef"
+                },
+                {
+                    "slug": "gv-color-white",
+                    "name": "White",
+                    "color": "#ffffff"
+                },
+                {
+                    "slug": "gv-color-dark-primary",
+                    "name": "Dark Primary",
+                    "color": "#fcc236"
+                },
+                {
+                    "slug": "gv-color-dark-text-primary",
+                    "name": "Dark Text Primary",
+                    "color": "#ffffff"
+                },
+                {
+                    "slug": "gv-color-dark-text-secondary",
+                    "name": "Dark Text Secondary",
+                    "color": "#ffffffb3"
+                },
+                {
+                    "slug": "gv-color-dark-text-placeholder",
+                    "name": "Dark Text Placeholder",
+                    "color": "#a0a0a0"
+                },
+                {
+                    "slug": "gv-color-dark-accent",
+                    "name": "Dark Accent",
+                    "color": "#fcc236"
+                },
+                {
+                    "slug": "gv-color-dark-accent-secondary",
+                    "name": "Dark Accent Secondary",
+                    "color": "#5b5b5b"
+                },
+                {
+                    "slug": "gv-color-dark-accent-hover",
+                    "name": "Dark Accent Hover",
+                    "color": "#daa82e"
+                },
+                {
+                    "slug": "gv-color-dark-background-primary",
+                    "name": "Dark Background Primary",
+                    "color": "#030301"
+                },
+                {
+                    "slug": "gv-color-dark-background-secondary",
+                    "name": "Dark Background Secondary",
+                    "color": "#373737"
+                },
+                {
+                    "slug": "gv-color-dark-background-tertiary",
+                    "name": "Dark Background Tertiary",
+                    "color": "#191200"
+                },
+                {
+                    "slug": "gv-color-dark-border",
+                    "name": "Dark Border",
+                    "color": "#ededed"
+                },
+                {
+                    "slug": "gv-color-dark-border-secondary",
+                    "name": "Dark Border Secondary",
+                    "color": "#eaeaea1c"
+                },
+                {
+                    "slug": "gv-color-dark-border-input",
+                    "name": "Dark Border Input",
+                    "color": "#b7b7b7"
+                },
+                {
+                    "slug": "gv-color-dark-secondary",
+                    "name": "Dark Secondary",
+                    "color": "#8a8a8a"
+                },
+                {
+                    "slug": "gv-color-black",
+                    "name": "Black",
+                    "color": "#000000"
+                }
+            ]
+        },
+        "custom": {
+            "headings": {
+                "typography": {
+                    "fontFamily": "var(--wp--preset--font-family--primary)"
+                }
+            }
+        },
+        "layout": {
+            "contentSize": "100vw",
+            "wideSize": "100vw"
+        },
+        "spacing": {
+            "padding": true,
+            "margin": true,
+            "blockGap": true,
+            "units": [
+                "px",
+                "em",
+                "rem",
+                "vh",
+                "vw"
+            ]
+        },
+        "typography": {
+            "customFontSize": true,
+            "fontFamilies": [
+                {
+                    "name": "IBM Plex Sans",
+                    "slug": "ibm-plex-sans",
+                    "fontFamily": "IBM Plex Sans, sans-serif",
+                    "fontFace": [
+                        {
+                            "src": "file:./assets/fonts/ibm-plex-sans/zYXGKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1swZSAXcomDVmadSD6lhzBaI5loa26g.woff2",
+                            "fontWeight": "100",
+                            "fontStyle": "normal",
+                            "fontFamily": "IBM Plex Sans"
+                        },
+                        {
+                            "src": "file:./assets/fonts/ibm-plex-sans/zYXGKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1swZSAXcomDVmadSDallzBaI5loa26g.woff2",
+                            "fontWeight": "200",
+                            "fontStyle": "normal",
+                            "fontFamily": "IBM Plex Sans"
+                        },
+                        {
+                            "src": "file:./assets/fonts/ibm-plex-sans/zYXGKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1swZSAXcomDVmadSDtFlzBaI5loa26g.woff2",
+                            "fontWeight": "300",
+                            "fontStyle": "normal",
+                            "fontFamily": "IBM Plex Sans"
+                        },
+                        {
+                            "src": "file:./assets/fonts/ibm-plex-sans/zYXGKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1swZSAXcomDVmadSD6llzBaI5loa26g.woff2",
+                            "fontWeight": "400",
+                            "fontStyle": "normal",
+                            "fontFamily": "IBM Plex Sans"
+                        },
+                        {
+                            "src": "file:./assets/fonts/ibm-plex-sans/zYXGKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1swZSAXcomDVmadSD2FlzBaI5loa26g.woff2",
+                            "fontWeight": "500",
+                            "fontStyle": "normal",
+                            "fontFamily": "IBM Plex Sans"
+                        },
+                        {
+                            "src": "file:./assets/fonts/ibm-plex-sans/zYXGKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1swZSAXcomDVmadSDNF5zBaI5loa26g.woff2",
+                            "fontWeight": "600",
+                            "fontStyle": "normal",
+                            "fontFamily": "IBM Plex Sans"
+                        },
+                        {
+                            "src": "file:./assets/fonts/ibm-plex-sans/zYXGKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1swZSAXcomDVmadSDDV5zBaI5loa26g.woff2",
+                            "fontWeight": "700",
+                            "fontStyle": "normal",
+                            "fontFamily": "IBM Plex Sans"
+                        },
+                        {
+                            "src": "file:./assets/fonts/ibm-plex-sans/zYXEKVElMYYaJe8bpLHnCwDKhdTEG46kmUZQCX598fQbM4jw8V78x9OWIhqbQqg4tIOm6vje.woff2",
+                            "fontWeight": "100",
+                            "fontStyle": "italic",
+                            "fontFamily": "IBM Plex Sans"
+                        },
+                        {
+                            "src": "file:./assets/fonts/ibm-plex-sans/zYXEKVElMYYaJe8bpLHnCwDKhdTEG46kmUZQCX598fQbM4jw8V78x9OWIhobQ6g4tIOm6vje.woff2",
+                            "fontWeight": "200",
+                            "fontStyle": "italic",
+                            "fontFamily": "IBM Plex Sans"
+                        },
+                        {
+                            "src": "file:./assets/fonts/ibm-plex-sans/zYXEKVElMYYaJe8bpLHnCwDKhdTEG46kmUZQCX598fQbM4jw8V78x9OWIhrFQ6g4tIOm6vje.woff2",
+                            "fontWeight": "300",
+                            "fontStyle": "italic",
+                            "fontFamily": "IBM Plex Sans"
+                        },
+                        {
+                            "src": "file:./assets/fonts/ibm-plex-sans/zYXEKVElMYYaJe8bpLHnCwDKhdTEG46kmUZQCX598fQbM4jw8V78x9OWIhqbQ6g4tIOm6vje.woff2",
+                            "fontWeight": "400",
+                            "fontStyle": "italic",
+                            "fontFamily": "IBM Plex Sans"
+                        },
+                        {
+                            "src": "file:./assets/fonts/ibm-plex-sans/zYXEKVElMYYaJe8bpLHnCwDKhdTEG46kmUZQCX598fQbM4jw8V78x9OWIhqpQ6g4tIOm6vje.woff2",
+                            "fontWeight": "500",
+                            "fontStyle": "italic",
+                            "fontFamily": "IBM Plex Sans"
+                        },
+                        {
+                            "src": "file:./assets/fonts/ibm-plex-sans/zYXEKVElMYYaJe8bpLHnCwDKhdTEG46kmUZQCX598fQbM4jw8V78x9OWIhpFRKg4tIOm6vje.woff2",
+                            "fontWeight": "600",
+                            "fontStyle": "italic",
+                            "fontFamily": "IBM Plex Sans"
+                        },
+                        {
+                            "src": "file:./assets/fonts/ibm-plex-sans/zYXEKVElMYYaJe8bpLHnCwDKhdTEG46kmUZQCX598fQbM4jw8V78x9OWIhp8RKg4tIOm6vje.woff2",
+                            "fontWeight": "700",
+                            "fontStyle": "italic",
+                            "fontFamily": "IBM Plex Sans"
+                        }
+                    ]
+                },
+                {
+                    "name": "Roboto",
+                    "slug": "roboto",
+                    "fontFamily": "Roboto, sans-serif",
+                    "fontFace": [
+                        {
+                            "src": "file:./assets/fonts/roboto/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbGmWggvWl0Qn.woff2",
+                            "fontWeight": "100",
+                            "fontStyle": "normal",
+                            "fontFamily": "Roboto"
+                        },
+                        {
+                            "src": "file:./assets/fonts/roboto/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuZEbWmWggvWl0Qn.woff2",
+                            "fontWeight": "200",
+                            "fontStyle": "normal",
+                            "fontFamily": "Roboto"
+                        },
+                        {
+                            "src": "file:./assets/fonts/roboto/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuaabWmWggvWl0Qn.woff2",
+                            "fontWeight": "300",
+                            "fontStyle": "normal",
+                            "fontFamily": "Roboto"
+                        },
+                        {
+                            "src": "file:./assets/fonts/roboto/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbWmWggvWl0Qn.woff2",
+                            "fontWeight": "400",
+                            "fontStyle": "normal",
+                            "fontFamily": "Roboto"
+                        },
+                        {
+                            "src": "file:./assets/fonts/roboto/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWub2bWmWggvWl0Qn.woff2",
+                            "fontWeight": "500",
+                            "fontStyle": "normal",
+                            "fontFamily": "Roboto"
+                        },
+                        {
+                            "src": "file:./assets/fonts/roboto/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuYaammWggvWl0Qn.woff2",
+                            "fontWeight": "600",
+                            "fontStyle": "normal",
+                            "fontFamily": "Roboto"
+                        },
+                        {
+                            "src": "file:./assets/fonts/roboto/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuYjammWggvWl0Qn.woff2",
+                            "fontWeight": "700",
+                            "fontStyle": "normal",
+                            "fontFamily": "Roboto"
+                        },
+                        {
+                            "src": "file:./assets/fonts/roboto/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuZEammWggvWl0Qn.woff2",
+                            "fontWeight": "800",
+                            "fontStyle": "normal",
+                            "fontFamily": "Roboto"
+                        },
+                        {
+                            "src": "file:./assets/fonts/roboto/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuZtammWggvWl0Qn.woff2",
+                            "fontWeight": "900",
+                            "fontStyle": "normal",
+                            "fontFamily": "Roboto"
+                        },
+                        {
+                            "src": "file:./assets/fonts/roboto/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLoHRiAr0klQnx24.woff2",
+                            "fontWeight": "100",
+                            "fontStyle": "italic",
+                            "fontFamily": "Roboto"
+                        },
+                        {
+                            "src": "file:./assets/fonts/roboto/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLgHQiAr0klQnx24.woff2",
+                            "fontWeight": "200",
+                            "fontStyle": "italic",
+                            "fontFamily": "Roboto"
+                        },
+                        {
+                            "src": "file:./assets/fonts/roboto/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLt_QiAr0klQnx24.woff2",
+                            "fontWeight": "300",
+                            "fontStyle": "italic",
+                            "fontFamily": "Roboto"
+                        },
+                        {
+                            "src": "file:./assets/fonts/roboto/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLoHQiAr0klQnx24.woff2",
+                            "fontWeight": "400",
+                            "fontStyle": "italic",
+                            "fontFamily": "Roboto"
+                        },
+                        {
+                            "src": "file:./assets/fonts/roboto/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLrPQiAr0klQnx24.woff2",
+                            "fontWeight": "500",
+                            "fontStyle": "italic",
+                            "fontFamily": "Roboto"
+                        },
+                        {
+                            "src": "file:./assets/fonts/roboto/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLl_XiAr0klQnx24.woff2",
+                            "fontWeight": "600",
+                            "fontStyle": "italic",
+                            "fontFamily": "Roboto"
+                        },
+                        {
+                            "src": "file:./assets/fonts/roboto/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLmbXiAr0klQnx24.woff2",
+                            "fontWeight": "700",
+                            "fontStyle": "italic",
+                            "fontFamily": "Roboto"
+                        },
+                        {
+                            "src": "file:./assets/fonts/roboto/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLgHXiAr0klQnx24.woff2",
+                            "fontWeight": "800",
+                            "fontStyle": "italic",
+                            "fontFamily": "Roboto"
+                        },
+                        {
+                            "src": "file:./assets/fonts/roboto/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLijXiAr0klQnx24.woff2",
+                            "fontWeight": "900",
+                            "fontStyle": "italic",
+                            "fontFamily": "Roboto"
+                        }
+                    ]
+                }
+            ],
+            "fontSizes": [
+                {
+                    "fluid": {
+                        "min": "0.875rem",
+                        "max": "1rem"
+                    },
+                    "size": "1rem",
+                    "slug": "small",
+                    "name": "Small"
+                },
+                {
+                    "fluid": {
+                        "min": "1rem",
+                        "max": "1.125rem"
+                    },
+                    "size": "1.125rem",
+                    "slug": "medium",
+                    "name": "Medium"
+                },
+                {
+                    "fluid": {
+                        "min": "1.75rem",
+                        "max": "1.875rem"
+                    },
+                    "size": "1.75rem",
+                    "slug": "large",
+                    "name": "Large"
+                },
+                {
+                    "fluid": false,
+                    "size": "2.25rem",
+                    "slug": "extra-large",
+                    "name": "Extra Large"
+                },
+                {
+                    "fluid": {
+                        "min": "4rem",
+                        "max": "10rem"
+                    },
+                    "size": "10rem",
+                    "slug": "xx-large",
+                    "name": "XX LARGE"
+                },
+                {
+                    "size": "clamp(28px, 3.889vw, 56px)",
+                    "slug": "heading-1",
+                    "name": "HEADING 1"
+                },
+                {
+                    "size": "clamp(24px, 3.333vw , 48px)",
+                    "slug": "heading-2",
+                    "name": "HEADING 2"
+                },
+                {
+                    "size": "clamp(24px, 2.222vw, 32px)",
+                    "slug": "heading-3",
+                    "name": "HEADING 3"
+                },
+                {
+                    "size": "clamp(18px, 1.667vw, 24px)",
+                    "slug": "heading-4",
+                    "name": "HEADING 4"
+                },
+                {
+                    "size": "clamp(100px, 12.5vw, 180px)",
+                    "slug": "404-font",
+                    "name": "404 FONT"
+                }
+            ]
+        }
+    },
+    "styles": {
+        "spacing": {
+            "blockGap": "1.2rem"
+        },
+        "blocks": {
+            "core/post-content": {
+                "spacing": {
+                    "margin": {
+                        "top": "0px"
+                    }
+                }
+            }
+        },
+        "elements": {
+            "heading": {
+                "typography": {
+                    "fontFamily": "var(--wp--preset--font-family--roboto)"
+                },
+                "color": {
+                    "text": "var(--wp--preset--color--renovater-primary)"
+                }
+            },
+            "link": {
+                "typography": {
+                    "textDecoration": "underline",
+                    "fontFamily": "var(--wp--preset--font-family--roboto)"
+                },
+                "color": {
+                    "text": "var:preset|color|renovater-accent"
+                }
+            },
+            "button": {
+                "color": {
+                    "background": "var(--wp--preset--color--renovater-accent)",
+                    "text": "var(--wp--preset--color--renovater-primary)"
+                }
+            }
+        },
+        "typography": {
+            "fontFamily": "var(--wp--preset--font-family--ibm-plex-sans)"
+        },
+        "color": {
+            "text": "var(--wp--preset--color--renovater-body-text)"
+        }
+    },
+    "templateParts": [
+        {
+            "area": "header",
+            "name": "header"
+        },
+        {
+            "area": "footer",
+            "name": "footer"
+        }
+    ],
+    "version": 2
 }

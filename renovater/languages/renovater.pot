@@ -1,403 +1,364 @@
-# Copyright (C) 2024 Jegstudio
+# Copyright (C) 2026 Jegstudio
 # This file is distributed under the GNU General Public License v3 or later..
 msgid ""
 msgstr ""
-"Project-Id-Version: Renovater 1.0.8\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/renovater\n"
+"Project-Id-Version: Renovater 1.1.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/renovater-x249fFtUzh1t\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-05-17T05:54:42+00:00\n"
+"POT-Creation-Date: 2026-05-06T06:40:07+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.9.0\n"
+"X-Generator: WP-CLI 2.10.0\n"
 "X-Domain: renovater\n"
 
 #. Theme Name of the theme
+#: style.css
+#: inc/class/class-init.php:1388
 msgid "Renovater"
 msgstr ""
 
 #. Theme URI of the theme
-msgid "https://gutenverse.com/renovater-theme"
+#: style.css
+msgid "https://gutenverse.com/themes/renovater/"
 msgstr ""
 
 #. Description of the theme
-msgid "Renovater is a modern and responsive style theme template for WordPress fullsite editing and fully compatible with Gutenverse plugin. Renovater created especially for Construction, Building Companies and Freelancer website for companies or individuals that need a modern landing page for their business. The templates includes both core version and Gutenverse plugin version, also has core and Gutenverse block patterns ready so you can start mix and match your template parts as you desire. The templates is built ready so you don't need to build it from scratch. We want to make your experience using WordPress fullsite editor more convenient."
+#: style.css
+#: inc/class/class-init.php:1389
+msgid "Renovater is a Construction & Building Company WordPress Block Theme designed for businesses that want to create a strong and professional online presence. Built with full site editing and powered by Gutenverse, this theme provides a flexible and modern platform to showcase construction projects, services, and company expertise with a clean and structured layout. Whether you manage a construction firm, contractor service, or renovation business, Renovater helps you present your work with clarity and credibility. It is ideal for contractors, builders, architects, engineering firms, and home improvement specialists looking to expand their reach online. With responsive layouts, customizable block patterns, and well-organized pages, you can easily highlight projects, services, team members, and client testimonials. Optimized for performance and usability, Renovater allows you to build a reliable website that reflects your brand and expertise in the Construction & Building Company sector. If you are looking for a scalable and professional solution, Renovater is a dependable Construction & Building Company WordPress theme to support your business growth."
 msgstr ""
 
 #. Author of the theme
+#: style.css
 msgid "Jegstudio"
 msgstr ""
 
 #. Author URI of the theme
+#: style.css
 msgid "https://gutenverse.com"
 msgstr ""
 
 #: inc/class/class-block-patterns.php:57
-msgid "Renovater Basic Patterns"
+msgid "Renovater Core Patterns"
 msgstr ""
 
 #: inc/class/class-block-patterns.php:61
 msgid "Renovater Gutenverse Patterns"
 msgstr ""
 
-#: inc/class/class-block-styles.php:58
-msgid "Button Fill with Hover"
+#: inc/class/class-block-patterns.php:62
+msgid "Renovater Gutenverse PRO Patterns"
 msgstr ""
 
-#: inc/class/class-block-styles.php:66
-msgid "Button Fill with Hover White"
+#: inc/class/class-init.php:1390
+msgid "Plugin Requirement"
 msgstr ""
 
-#: inc/class/class-block-styles.php:74
-msgid "Line Separator"
+#: inc/class/class-init.php:1391
+msgid "This theme require some plugins. Please make sure all the plugin below are installed and activated."
 msgstr ""
 
-#: inc/class/class-block-styles.php:82
-#: inc/class/class-block-styles.php:90
-#: inc/class/class-block-styles.php:98
-msgid "Box Shadow"
+#: inc/class/class-init.php:1397
+msgid "Install Gutenverse Plugin"
 msgstr ""
 
-#: inc/class/class-block-styles.php:106
-#: inc/class/class-block-styles.php:114
-#: inc/class/class-block-styles.php:122
-msgid "Box Shadow on Hover"
+#: inc/class/class-init.php:1398
+msgid "Activate Gutenverse Plugin"
 msgstr ""
 
-#: inc/class/class-block-styles.php:130
-#: inc/class/class-block-styles.php:138
-#: inc/class/class-block-styles.php:146
-#: inc/class/class-block-styles.php:202
-msgid "Border Hover"
+#: inc/class/class-init.php:1399
+msgid "Gutenverse Plugin Installed"
 msgstr ""
 
-#: inc/class/class-block-styles.php:154
-#: inc/class/class-block-styles.php:162
-#: inc/class/class-block-styles.php:170
-msgid "Border Bottom"
+#: inc/class/class-init.php:1413
+#: inc/class/class-plugin-notice.php:90
+msgid "Gutenverse"
 msgstr ""
 
-#: inc/class/class-block-styles.php:178
-#: inc/class/class-block-styles.php:186
-#: inc/class/class-block-styles.php:194
-msgid "Border Bottom Hover"
+#: inc/class/class-init.php:1414
+#: inc/class/class-plugin-notice.php:91
+msgid "GUTENVERSE – GUTENBERG BLOCKS AND WEBSITE BUILDER FOR SITE EDITOR, TEMPLATE LIBRARY, POPUP BUILDER, ADVANCED ANIMATION EFFECTS, COMPLETE FEATURE ECOSYSTEM, 45+ FREE USER-FRIENDLY BLOCKS"
 msgstr ""
 
-#: inc/class/class-init.php:644
-msgid "Install Required Plugins"
+#: inc/class/class-init.php:1427
+#: inc/class/class-plugin-notice.php:104
+msgid "Gutenverse Form"
 msgstr ""
 
-#: inc/class/class-init.php:891
-msgid "Take Your Website To New Height with"
+#: inc/class/class-init.php:1428
+#: inc/class/class-plugin-notice.php:105
+msgid "GUTENVERSE FORM – FORM BUILDER FOR GUTENBERG BLOCK EDITOR, MULTI-STEP FORMS, CONDITIONAL LOGIC, PAYMENT, CALCULATION, 15+ FREE USER-FRIENDLY FORM BLOCKS"
 msgstr ""
 
-#: inc/class/class-init.php:892
-msgid "Renovater theme work best with Gutenverse plugin. By installing Gutenverse plugin you may access Renovater templates built with Gutenverse and get access to more than 40 free blocks, hundred free Layout and Section."
+#: inc/class/class-init.php:1440
+#: inc/class/class-plugin-notice.php:117
+msgid "Gutenverse Companion"
 msgstr ""
 
-#: inc/class/class-init.php:930
-msgid "Please install newer version of Gutenverse plugin! (v1.1.2 and above)"
+#: inc/class/class-init.php:1441
+#: inc/class/class-plugin-notice.php:118
+msgid "A companion plugin designed specifically to enhance and extend the functionality of Gutenverse base themes. This plugin integrates seamlessly with the base themes, providing additional features, customization options, and advanced tools to optimize the overall user experience and streamline the development process."
 msgstr ""
 
-#: inc/class/class-init.php:960
-msgid "Primary"
+#: inc/class/class-init.php:1467
+msgid "Renovater PRO"
 msgstr ""
 
-#: inc/class/class-upgrader.php:123
-#: inc/class/class-upgrader.php:169
-msgid "%s Upgrade Notice!"
+#: inc/class/class-init.php:1530
+msgid "You don't have any demo activated"
 msgstr ""
 
-#: inc/class/class-upgrader.php:125
-msgid "There are some new exciting updates we want to announce. This update will required the latest version of Gutenverse plugin to work smoothly, so we recommend to update your Gutenverse plugin."
+#: inc/class/class-init.php:1598
+#: inc/class/class-init.php:1600
+#: inc/class/class-init.php:1601
+msgid "unknown"
 msgstr ""
 
-#: inc/class/class-upgrader.php:131
-msgid "Go to plugin page"
+#: inc/class/class-init.php:1603
+msgid "by"
 msgstr ""
 
-#: inc/class/class-upgrader.php:135
-#: inc/class/class-upgrader.php:179
-msgid "Close notification"
+#: inc/class/class-init.php:1625
+#: inc/class/class-init.php:1626
+msgid "Renovater Dashboard"
 msgstr ""
 
-#: inc/class/class-upgrader.php:171
-msgid "We've made some changes to page content layout and global style. Please check "
+#: inc/class/class-plugin-notice.php:347
+msgid "Installing..."
 msgstr ""
 
-#: inc/class/class-upgrader.php:172
-msgid "your pages"
+#: inc/class/class-plugin-notice.php:387
+msgid "Install Failed, Try Again"
 msgstr ""
 
-#: inc/class/class-upgrader.php:173
-msgid " to see how the new layout looks on your site. You can always revert back by enable the inherit layout option on the "
+#: inc/class/class-plugin-notice.php:401
+msgid "Thank you For Installing Renovater Theme"
 msgstr ""
 
-#: inc/class/class-upgrader.php:174
-msgid "Gutenverse settings."
+#: inc/class/class-plugin-notice.php:403
+msgid "Unlock the full potential of your website with the recommended plugins."
 msgstr ""
 
-#: inc/class/class-upgrader.php:175
-msgid " dashboard. Learn more about new layout on "
+#: inc/class/class-plugin-notice.php:405
+msgid "Activate it to explore exclusive extensions, ready-to-use demo templates, and powerful features that make building your site easier and more enjoyable."
 msgstr ""
 
-#: inc/class/class-upgrader.php:176
-msgid "this page."
+#: inc/class/class-plugin-notice.php:409
+msgid "Install Recommended Plugins"
 msgstr ""
 
-#: inc/class/class-upgrader.php:181
-msgid "Got Question?"
+#: inc/class/class-plugin-notice.php:413
+msgid "Don\\'t refresh the page when installing recommended plugins"
 msgstr ""
 
-#: inc/patterns/core-404.php:6
+#: inc/patterns/renovater-core-404.php:6
 msgid "Core 404"
 msgstr ""
 
-#: inc/patterns/core-archive-title.php:6
+#: inc/patterns/renovater-core-archive-title.php:6
 msgid "Archive Hero"
 msgstr ""
 
-#: inc/patterns/core-footer.php:6
+#: inc/patterns/renovater-core-footer.php:6
 msgid "Core Footer"
 msgstr ""
 
-#: inc/patterns/core-header.php:6
+#: inc/patterns/renovater-core-header.php:6
 msgid "Core Header"
 msgstr ""
 
-#: inc/patterns/core-index-about.php:6
+#: inc/patterns/renovater-core-index-about.php:6
 msgid "Core Home About"
 msgstr ""
 
-#: inc/patterns/core-index-call-to-action.php:6
+#: inc/patterns/renovater-core-index-call-to-action.php:6
 msgid "Core Home CTA"
 msgstr ""
 
-#: inc/patterns/core-index-client-logo.php:6
+#: inc/patterns/renovater-core-index-client-logo.php:6
 msgid "Core Home Logo"
 msgstr ""
 
-#: inc/patterns/core-index-fun-fact.php:6
+#: inc/patterns/renovater-core-index-fun-fact.php:6
 msgid "Core Home Fun Fact"
 msgstr ""
 
-#: inc/patterns/core-index-hero.php:6
+#: inc/patterns/renovater-core-index-hero.php:6
 msgid "Core Index Hero"
 msgstr ""
 
-#: inc/patterns/core-index-services.php:6
+#: inc/patterns/renovater-core-index-services.php:6
 msgid "Core Home Services"
 msgstr ""
 
-#: inc/patterns/core-index-testimonials.php:6
+#: inc/patterns/renovater-core-index-testimonials.php:6
 msgid "Core Home Testimonials"
 msgstr ""
 
-#: inc/patterns/core-index-title.php:6
+#: inc/patterns/renovater-core-index-title.php:6
 msgid "Index Hero"
 msgstr ""
 
-#: inc/patterns/core-index-works.php:6
+#: inc/patterns/renovater-core-index-works.php:6
 msgid "Core Home Works"
 msgstr ""
 
-#: inc/patterns/core-page-title.php:6
+#: inc/patterns/renovater-core-page-title.php:6
 msgid "Core Page Title"
 msgstr ""
 
-#: inc/patterns/core-search-title.php:6
+#: inc/patterns/renovater-core-search-title.php:6
 msgid "Search Hero"
 msgstr ""
 
-#: inc/patterns/core-single-post-title.php:6
+#: inc/patterns/renovater-core-single-post-title.php:6
 msgid "Core Post Title"
 msgstr ""
 
-#: inc/patterns/gutenverse-404-section.php:6
+#: inc/patterns/renovater-gutenverse-404-section.php:6
 msgid "Gutenverse 404 Section"
 msgstr ""
 
-#: inc/patterns/gutenverse-about-us-about.php:6
-msgid "Gutenverse About Us 1"
-msgstr ""
-
-#: inc/patterns/gutenverse-about-us-call-to-action.php:6
-msgid "Gutenverse About Us Call to Action"
-msgstr ""
-
-#: inc/patterns/gutenverse-about-us-fun-fact.php:6
-msgid "Gutenverse Fun Fact"
-msgstr ""
-
-#: inc/patterns/gutenverse-about-us-team.php:6
-msgid "Gutenverse Team"
-msgstr ""
-
-#: inc/patterns/gutenverse-about-us-title.php:6
-msgid "Gutenverse About Us Title"
-msgstr ""
-
-#: inc/patterns/gutenverse-about-us-why-choose-us.php:6
-msgid "Gutenverse About Us Why"
-msgstr ""
-
-#: inc/patterns/gutenverse-archive-posts.php:6
+#: inc/patterns/renovater-gutenverse-archive-posts.php:6
 msgid "Gutenverse Archive Posts"
 msgstr ""
 
-#: inc/patterns/gutenverse-archive-title.php:6
+#: inc/patterns/renovater-gutenverse-archive-title.php:6
 msgid "Gutenverse Archive Title"
 msgstr ""
 
-#: inc/patterns/gutenverse-contact-us-contact.php:6
-msgid "Gutenverse Contact Us Contact"
-msgstr ""
-
-#: inc/patterns/gutenverse-contact-us-hero-title.php:6
-msgid "Gutenverse Contact Us Hero Title"
-msgstr ""
-
-#: inc/patterns/gutenverse-faq-call-to-action.php:6
-msgid "Gutenverse FAQ Call to Action"
-msgstr ""
-
-#: inc/patterns/gutenverse-faq-hero-title.php:6
-msgid "Gutenverse FAQ Hero Title"
-msgstr ""
-
-#: inc/patterns/gutenverse-faq-pricing-plans.php:6
-msgid "Gutenverse FAQ Pricing Plan"
-msgstr ""
-
-#: inc/patterns/gutenverse-faq-questions.php:6
-msgid "Gutenverse FAQ"
-msgstr ""
-
-#: inc/patterns/gutenverse-footer.php:6
+#: inc/patterns/renovater-gutenverse-footer.php:6
 msgid "Gutenverse Footer"
 msgstr ""
 
-#: inc/patterns/gutenverse-header.php:6
+#: inc/patterns/renovater-gutenverse-header.php:6
 msgid "Gutenverse Header"
 msgstr ""
 
-#: inc/patterns/gutenverse-home-about.php:6
+#: inc/patterns/renovater-gutenverse-home-about.php:6
 msgid "Gutenverse Home About"
 msgstr ""
 
-#: inc/patterns/gutenverse-home-call-to-action.php:6
+#: inc/patterns/renovater-gutenverse-home-call-to-action.php:6
 msgid "Gutenverse Home Call to Action"
 msgstr ""
 
-#: inc/patterns/gutenverse-home-client-logo.php:6
+#: inc/patterns/renovater-gutenverse-home-client-logo.php:6
 msgid "Gutenverse Home Client Logo"
 msgstr ""
 
-#: inc/patterns/gutenverse-home-faq.php:6
+#: inc/patterns/renovater-gutenverse-home-faq.php:6
 msgid "Gutenverse Home FAQ"
 msgstr ""
 
-#: inc/patterns/gutenverse-home-fun-fact.php:6
+#: inc/patterns/renovater-gutenverse-home-fun-fact.php:6
 msgid "Gutenverse Home Fun Fact"
 msgstr ""
 
-#: inc/patterns/gutenverse-home-hero.php:6
+#: inc/patterns/renovater-gutenverse-home-hero.php:6
 msgid "Gutenverse Home Hero"
 msgstr ""
 
-#: inc/patterns/gutenverse-home-services.php:6
+#: inc/patterns/renovater-gutenverse-home-services.php:6
 msgid "Gutenverse Home Services"
 msgstr ""
 
-#: inc/patterns/gutenverse-home-testimonials.php:6
+#: inc/patterns/renovater-gutenverse-home-testimonials.php:6
 msgid "Gutenverse Home Testimonials"
 msgstr ""
 
-#: inc/patterns/gutenverse-home-work.php:6
+#: inc/patterns/renovater-gutenverse-home-work.php:6
 msgid "Gutenverse Home Work"
 msgstr ""
 
-#: inc/patterns/gutenverse-index-posts-2.php:6
-msgid "Gutenverse Index Post 2"
-msgstr ""
-
-#: inc/patterns/gutenverse-index-posts.php:6
+#: inc/patterns/renovater-gutenverse-index-posts.php:6
 msgid "Gutenverse Index Post"
 msgstr ""
 
-#: inc/patterns/gutenverse-index-title.php:6
+#: inc/patterns/renovater-gutenverse-index-title.php:6
 msgid "Gutenverse Index Title"
 msgstr ""
 
-#: inc/patterns/gutenverse-page-posts.php:6
+#: inc/patterns/renovater-gutenverse-page-posts.php:6
 msgid "Gutenverse Page Post"
 msgstr ""
 
-#: inc/patterns/gutenverse-page-title.php:6
+#: inc/patterns/renovater-gutenverse-page-title.php:6
 msgid "Gutenverse Page Title"
 msgstr ""
 
-#: inc/patterns/gutenverse-pricing-fun-fact.php:6
-msgid "Gutenverse Pricing Fun Fact"
-msgstr ""
-
-#: inc/patterns/gutenverse-pricing-hero-title.php:6
-msgid "Gutenverse Pricing Hero Title"
-msgstr ""
-
-#: inc/patterns/gutenverse-pricing-pricing-plans.php:6
-msgid "Gutenverse Pricing Plans"
-msgstr ""
-
-#: inc/patterns/gutenverse-pricing-testimonials.php:6
-msgid "Gutenverse Pricing Testimonials"
-msgstr ""
-
-#: inc/patterns/gutenverse-search-content.php:6
-msgid "Gutenverse Search Content"
-msgstr ""
-
-#: inc/patterns/gutenverse-search-posts.php:6
+#: inc/patterns/renovater-gutenverse-search-posts.php:6
 msgid "Gutenverse Search Posts"
 msgstr ""
 
-#: inc/patterns/gutenverse-search-title.php:6
+#: inc/patterns/renovater-gutenverse-search-title.php:6
 msgid "Gutenverse Search Title"
 msgstr ""
 
-#: inc/patterns/gutenverse-services-client-logo.php:6
-msgid "Gutenverse Services Client Logo"
-msgstr ""
-
-#: inc/patterns/gutenverse-services-fun-fact.php:6
-msgid "Gutenverse Services Fun Fact"
-msgstr ""
-
-#: inc/patterns/gutenverse-services-hero-title.php:6
-msgid "Gutenverse Services Hero Title"
-msgstr ""
-
-#: inc/patterns/gutenverse-services-work-process.php:6
-msgid "Gutenverse Services Work Process"
-msgstr ""
-
-#: inc/patterns/gutenverse-single-post-posts.php:6
+#: inc/patterns/renovater-gutenverse-single-post-posts.php:6
 msgid "Gutenverse Single Post Content"
 msgstr ""
 
-#: inc/patterns/gutenverse-single-post-title.php:6
+#: inc/patterns/renovater-gutenverse-single-post-title.php:6
 msgid "Gutenverse Single Post Title"
 msgstr ""
 
-#: index.php:4
-msgid "This theme was built for the WordPress full-site-editing feature. If you use WordPress below version 5.9, you need to install and activate the Gutenberg plugin to make it work. "
+#: theme.json
+msgctxt "Custom template name"
+msgid "Blank canvas"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Full Width"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Primary (Legacy)"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Accent (Legacy)"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Background (Legacy)"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Body Text (Legacy)"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Border (Legacy)"
 msgstr ""
 
 #: theme.json
 msgctxt "Color name"
 msgid "Primary"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Text Primary"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Text Secondary"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Text Placeholder"
 msgstr ""
 
 #: theme.json
@@ -407,17 +368,27 @@ msgstr ""
 
 #: theme.json
 msgctxt "Color name"
-msgid "Background"
+msgid "Accent Secondary"
 msgstr ""
 
 #: theme.json
 msgctxt "Color name"
-msgid "Background 2"
+msgid "Accent Hover"
 msgstr ""
 
 #: theme.json
 msgctxt "Color name"
-msgid "Body/Text"
+msgid "Background Primary"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Background Secondary"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Background Tertiary"
 msgstr ""
 
 #: theme.json
@@ -426,13 +397,98 @@ msgid "Border"
 msgstr ""
 
 #: theme.json
-msgctxt "Gradient name"
-msgid "Pink to Yellow"
+msgctxt "Color name"
+msgid "Border Secondary"
 msgstr ""
 
 #: theme.json
-msgctxt "Font family name"
-msgid "Roboto"
+msgctxt "Color name"
+msgid "Border Input"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Secondary"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "White"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Dark Primary"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Dark Text Primary"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Dark Text Secondary"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Dark Text Placeholder"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Dark Accent"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Dark Accent Secondary"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Dark Accent Hover"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Dark Background Primary"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Dark Background Secondary"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Dark Background Tertiary"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Dark Border"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Dark Border Secondary"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Dark Border Input"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Dark Secondary"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Black"
 msgstr ""
 
 #: theme.json
@@ -441,8 +497,8 @@ msgid "IBM Plex Sans"
 msgstr ""
 
 #: theme.json
-msgctxt "Font size name"
-msgid "Tiny"
+msgctxt "Font family name"
+msgid "Roboto"
 msgstr ""
 
 #: theme.json
@@ -452,7 +508,7 @@ msgstr ""
 
 #: theme.json
 msgctxt "Font size name"
-msgid "Normal"
+msgid "Medium"
 msgstr ""
 
 #: theme.json
@@ -462,25 +518,35 @@ msgstr ""
 
 #: theme.json
 msgctxt "Font size name"
-msgid "Extra large"
+msgid "Extra Large"
 msgstr ""
 
 #: theme.json
 msgctxt "Font size name"
-msgid "Huge"
+msgid "XX LARGE"
 msgstr ""
 
 #: theme.json
 msgctxt "Font size name"
-msgid "Gigantic"
+msgid "HEADING 1"
 msgstr ""
 
 #: theme.json
-msgctxt "Custom template name"
-msgid "Blank Canvas"
+msgctxt "Font size name"
+msgid "HEADING 2"
 msgstr ""
 
 #: theme.json
-msgctxt "Custom template name"
-msgid "Basic Template"
+msgctxt "Font size name"
+msgid "HEADING 3"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "HEADING 4"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "404 FONT"
 msgstr ""
